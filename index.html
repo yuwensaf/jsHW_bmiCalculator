@@ -1,0 +1,76 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>BMI 立即算</title>
+
+    <link rel="stylesheet" href="stylesheets/all.css">
+</head>
+<body>
+
+    <header>
+        <div class="main">
+            <img class="logo" src="img/BMICLogo.png" alt="BMI">
+            <div class="d-flex flex-column inputArea">
+                <p>身高 cm</p>
+                <input type="text" id="inputHeight" placeholder="請輸入身高">
+                <p>體重 kg</p>
+                <input type="text" id="inputWeight" placeholder="請輸入體重">
+            </div>
+            <div class="result d-flex">
+                <!-- 看結果 -->
+                <a href="#" class="seeResult">
+                    <p>看結果</p>
+                </a>
+                <!-- 理想 -->
+                <div class="cal-result">
+                    <div class="result-layout d-flex flex-column justify-content-center align-items-center">
+                        <p class="result-num">20.90</p>
+                        <p style="font-size: 14px; line-height: 0.5;">BMI</p>
+                        <a href="#" class="refresh d-flex align-items-center justify-content-center">
+                            <img src="img/icons_loop.svg" alt="refresh" style="width: 55%;">
+                        </a>
+                    </div>
+                    <div class="result-status result-status-green d-flex justify-content-center">
+                        <p class="result-text">理想</p>
+                    </div>
+                </div>
+                <!-- 儲存結果 -->
+                <a href="#" class="saveResult">
+                    <p>儲存結果</p>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <section class="records">
+        <h3>BMI 記錄</h3>
+        <div class="records-wrap">
+    
+        </div>
+    
+            <div class="d-flex justify-content-center">
+                <a class="remove-record" href="#">清除所有記錄</a>
+            </div>
+    </section>
+
+    <footer>
+        <img src="img/BMICLogo.png" alt="logo" style="width: 55px; height: 55px;">
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="js/all.js"></script>
+    
+</body>
+</html>
