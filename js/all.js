@@ -223,7 +223,7 @@ function delThis(e){
     e.preventDefault();
     let target = e.target.nodeName; // 選取「我目前點擊到的元素」
     // 如果「我目前點擊到的元素」是「a 連結」
-    if(target == 'A'){
+    if(target === 'A'){
         let index = e.target.dataset.index;
         data.splice(index, 1);
         saveLocalStorage(); // 刪除完「data 陣列」的資料後，也要更新 localStorage
